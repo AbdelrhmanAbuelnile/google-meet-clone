@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import ClinetProvider from "./context/ClientProvider";
 import "./globals.css";
 import { SnackbarProvider } from "./context/SnackBarContext";
+import { Analytics } from "@vercel/analytics/react"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,6 +42,7 @@ export default function RootLayout({
             <SnackbarProvider>
               <Navbar />
               <main className="mx-auto max-w-5xl px-3 py-6">{children}</main>
+              <Analytics />
             </SnackbarProvider>
           </ClinetProvider>
         </body>
