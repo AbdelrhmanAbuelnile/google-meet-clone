@@ -14,3 +14,11 @@
 .str-video__notification {
   color: white;
 }
+
+.str-video__device-settings__button{
+  background-color: #3B82F6;
+}
+
+.str-video__device-settings__button:hover{
+  background-color: #2563EB;
+}

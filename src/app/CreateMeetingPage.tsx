@@ -56,6 +56,7 @@ function CreateMeetingPage() {
 
       await call.getOrCreate({
         data: {
+          starts_at,
           members,
           custom: { description: descriptionInput },
         },
