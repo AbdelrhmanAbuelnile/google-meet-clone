@@ -7,6 +7,7 @@ import ClinetProvider from "./context/ClientProvider";
 import "./globals.css";
 import { SnackbarProvider } from "./context/SnackBarContext";
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,6 +44,7 @@ export default function RootLayout({
               <Navbar />
               <main className="mx-auto max-w-5xl px-3 py-6">{children}</main>
               <Analytics />
+              <SpeedInsights />
             </SnackbarProvider>
           </ClinetProvider>
         </body>
