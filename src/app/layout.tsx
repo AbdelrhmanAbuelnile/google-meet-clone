@@ -12,6 +12,20 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Google meet clone",
   description: "A video calling app built with Next.js & Stream",
+  icons: {
+    icon: [
+      {
+        media: '(prefers-color-scheme: light)',
+        url: '/images/favicon.ico',
+        href: '/images/favicon.ico',
+      },
+      {
+        media: '(prefers-color-scheme: dark)',
+        url: '/images/favicon.ico',
+        href: '/images/favicon.ico',
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
